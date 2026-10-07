@@ -1,0 +1,15 @@
+# Сборка и компиляция
+bin/
+obj/
+
+# Конфигурация IDE JetBrains Rider / IntelliJ
+.idea/
+*.user
+
+# Локальные базы данных SQLite (чтобы не затереть БД при пуше)
+*.db-shm
+*.db-wal
+
+# Локальные настройки и кэш
+.vs/
+.history/
