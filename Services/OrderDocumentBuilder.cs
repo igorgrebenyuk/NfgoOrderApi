@@ -138,7 +138,7 @@ public class OrderDocumentBuilder : IOrderDocumentBuilder
             new TableBorders(
                 Border<TopBorder>(), Border<LeftBorder>(), Border<BottomBorder>(),
                 Border<RightBorder>(), Border<InsideHorizontalBorder>(), Border<InsideVerticalBorder>()),
-            new TableLayout { Type = LayoutValues.Fixed }));
+            new TableLayout { Type = TableLayoutValues.Fixed }));
 
         var grid = new TableGrid();
         foreach (var w in widths) grid.Append(new GridColumn { Width = w.ToString() });
@@ -175,7 +175,7 @@ public class OrderDocumentBuilder : IOrderDocumentBuilder
         var table = new Table();
         table.Append(new TableProperties(
             new TableWidth { Width = "9355", Type = TableWidthUnitValues.Dxa },
-            new TableLayout { Type = LayoutValues.Fixed }));
+            new TableLayout { Type = TableLayoutValues.Fixed }));
         var grid = new TableGrid();
         foreach (var w in widths) grid.Append(new GridColumn { Width = w.ToString() });
         table.Append(grid);
